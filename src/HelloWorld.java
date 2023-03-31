@@ -24,10 +24,10 @@ public class HelloWorld {
 
         System.out.println(isTrue);
 
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Enter your name please "); // command / - закоментировать выделенный  код
-//        String str = scanner.nextLine();
-//        System.out.println(str + " Hello World");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name please "); // command / - закоментировать выделенный  код
+        String str = scanner.nextLine();
+        System.out.println(str + " Hello World");
 
 
         System.out.println((double) 4/3); // isTrue

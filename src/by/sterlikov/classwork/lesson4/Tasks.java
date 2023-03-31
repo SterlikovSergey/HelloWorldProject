@@ -1,4 +1,4 @@
-package by.Sterlikov.classwork.lesson4;
+package by.sterlikov.classwork.lesson4;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -30,6 +30,7 @@ public class TaskZero {
                 result = true;
             }
         }
+
         if (result){
             System.out.println("The desired value is present in the array and repeated - " + count +  " times");
         } else {

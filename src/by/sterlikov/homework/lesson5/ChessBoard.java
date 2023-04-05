@@ -8,10 +8,10 @@ public class ChessBoard {
             for(int j = 0; j < chessBoard[i].length;j++){
                 if((i+j)%2==0){
                     //chessBoard[i][j] += 8;
-                    chessBoard[i][j] += "W";
+                    chessBoard[i][j] = "W";
                 } else {
                     //chessBoard[i][j] += 0;
-                    chessBoard[i][j] += "B";
+                    chessBoard[i][j] = "B";
                 }
             }
         }

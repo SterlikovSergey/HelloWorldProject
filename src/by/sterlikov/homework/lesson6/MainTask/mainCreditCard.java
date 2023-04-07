@@ -1,11 +1,12 @@
 package by.sterlikov.homework.lesson6.MainTask;
 
-public class main {
+public class mainCreditCard {
     public static void main(String[] args) {
         CreditCard creditCard = new CreditCard();
         CreditCard creditCard1 = new CreditCard(1111,0);
         CreditCard creditCard2 = new CreditCard(2222,0);
         CreditCard creditCard3 = new CreditCard(3333,0);
+
 
         creditCard.setAccountNumber(1010);
         creditCard.setCurrentAccountBalance(0);

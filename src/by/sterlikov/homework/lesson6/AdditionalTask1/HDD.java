@@ -1,9 +1,9 @@
 package by.sterlikov.homework.lesson6.AdditionalTask1;
 
 public class HDD {
-    String name;
-    int volume;
-    boolean type;
+    private String name = "";
+    private int volume = 0;
+    boolean type = false;
 
     public HDD() {
     }
@@ -12,5 +12,14 @@ public class HDD {
         this.name = name;
         this.volume = volume;
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "HDD{" +
+                "name='" + name + '\'' +
+                ", volume=" + volume +
+                ", type=" + type +
+                '}';
     }
 }

@@ -1,8 +1,8 @@
 package by.sterlikov.homework.lesson6.MainTask;
 
 public class CreditCard {
-    int accountNumber;
-    int currentAccountBalance;
+    private int accountNumber;
+    private int currentAccountBalance;
 
     public CreditCard(){
 
@@ -39,7 +39,7 @@ public class CreditCard {
     }
 
     public void removedMoneyFromCard(int money){
-        if(currentAccountBalance > 0 && (currentAccountBalance - money >= 0)){
+        if (currentAccountBalance - money >= 0){
             currentAccountBalance -= money;
             System.out.println("Removed from the card number " + accountNumber + " -; " + money + " rub.");
             checkBalance();

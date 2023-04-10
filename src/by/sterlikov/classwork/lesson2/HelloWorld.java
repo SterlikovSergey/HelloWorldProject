@@ -1,3 +1,5 @@
+package by.sterlikov.classwork.lesson2;
+
 import java.util.Scanner;
 
 public class HelloWorld {

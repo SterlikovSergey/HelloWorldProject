@@ -1,4 +1,4 @@
-package by.Sterlikov.homework.lesson3;
+package by.sterlikov.homework.lesson3;
 import java.util.Scanner;
 public class GuessTheNumber {
     public static void main(String[] args) {

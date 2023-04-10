@@ -1,3 +1,4 @@
+package by.sterlikov.homework.lesson2;
 
 import java.util.Scanner;
 

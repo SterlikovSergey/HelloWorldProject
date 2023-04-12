@@ -42,6 +42,12 @@ public class Triangle extends Figure{
     }
 
     @Override
+    public double getPerimeter() {
+        double p = (sideA + sideB + sideC) / 2;
+        return p;
+    }
+
+    @Override
     public String getName() {
         return nameFigure;
     }

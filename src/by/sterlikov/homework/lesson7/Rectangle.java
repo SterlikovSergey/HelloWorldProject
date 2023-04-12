@@ -30,6 +30,12 @@ public class Rectangle extends Figure{
     }
 
     @Override
+    public double getPerimeter() {
+        Double perimeter = (2 * length) + (2 * width);
+        return perimeter;
+    }
+
+    @Override
     public String getName() {
         return nameFigure;
     }

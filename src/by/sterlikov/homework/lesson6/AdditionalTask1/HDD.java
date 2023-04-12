@@ -1,8 +1,8 @@
 package by.sterlikov.homework.lesson6.AdditionalTask1;
 
 public class HDD {
-    private String name = "";
-    private int volume = 0;
+    private String name;
+    private int volume;
     boolean type = false;
 
     public HDD() {

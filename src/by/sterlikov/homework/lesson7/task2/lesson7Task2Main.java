@@ -6,10 +6,11 @@ public class lesson7Task2Main {
 
         Printed[] company = {new Accountant("Accountant"),
                             new Director("Director"),
-                            new Worker("Worker")};
+                            new Worker("WWorker")};
 
         for(Printed comp : company) {
             comp.printedNameClass();
+            System.out.println(comp.getClass().getSimpleName());
         }
 
     }

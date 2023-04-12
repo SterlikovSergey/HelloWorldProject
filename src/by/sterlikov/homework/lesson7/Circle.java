@@ -2,6 +2,7 @@ package by.sterlikov.homework.lesson7;
 
 public class Circle extends Figure{
     private String nameFigure;
+    private static String NAME = "circle" ;
     private double  radius;
     public Circle() {
     }

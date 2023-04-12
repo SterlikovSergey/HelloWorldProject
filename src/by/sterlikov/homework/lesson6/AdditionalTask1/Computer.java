@@ -3,8 +3,8 @@ package by.sterlikov.homework.lesson6.AdditionalTask1;
 public class Computer {
     private int price;
     private String model;
-    private RAM ram;
-    private HDD hdd;
+    public RAM ram;
+    public HDD hdd;
 
 
     public Computer(int price, String model) {

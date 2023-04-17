@@ -15,13 +15,13 @@ public class Patient extends TreatmentPlan{
         this.plan = plan;
         if (plan == 1){
             TreatmentPlan treatmentPlan = new TreatmentPlan();
-            System.out.println(treatmentPlan.Tplan(1));
+            System.out.println(treatmentPlan.tplan(1));
         } else if (plan == 2){
             TreatmentPlan treatmentPlan = new TreatmentPlan();
-            System.out.println(treatmentPlan.Tplan(2));
+            System.out.println(treatmentPlan.tplan(2));
         } else {
             TreatmentPlan treatmentPlan = new TreatmentPlan();
-            System.out.println(treatmentPlan.Tplan(3));
+            System.out.println(treatmentPlan.tplan(3));
         }
     }
 

@@ -1,4 +1,4 @@
-package by.sterlikov.homework.lesson7;
+package by.sterlikov.homework.lesson7.task1;
 
 public class Lesson7Main {
     public static void main(String[] args) {

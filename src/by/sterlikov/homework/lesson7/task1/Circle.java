@@ -1,6 +1,6 @@
-package by.sterlikov.homework.lesson7;
+package by.sterlikov.homework.lesson7.task1;
 
-public class Circle extends Figure{
+public class Circle extends Figure {
     private String nameFigure;
     private static String NAME = "circle" ;
     private double  radius;

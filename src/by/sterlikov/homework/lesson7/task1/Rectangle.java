@@ -1,6 +1,8 @@
-package by.sterlikov.homework.lesson7;
+package by.sterlikov.homework.lesson7.task1;
 
-public class Rectangle extends Figure{
+import by.sterlikov.homework.lesson7.task1.Figure;
+
+public class Rectangle extends Figure {
     private String nameFigure;
     private double length;
     private double width;

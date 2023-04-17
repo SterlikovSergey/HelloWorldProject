@@ -1,6 +1,8 @@
-package by.sterlikov.homework.lesson7;
+package by.sterlikov.homework.lesson7.task1;
 
-public class Triangle extends Figure{
+import by.sterlikov.homework.lesson7.task1.Figure;
+
+public class Triangle extends Figure {
     private String nameFigure;
     private double sideA;
     private double sideB;

@@ -1,4 +1,4 @@
-package by.sterlikov.homework.lesson7;
+package by.sterlikov.homework.lesson7.task1;
 
 public abstract class Figure {
     public abstract double getArea();

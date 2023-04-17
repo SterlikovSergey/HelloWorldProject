@@ -59,6 +59,9 @@ public class Phone {
     public void receiveCall(String nameCaller, String number){
         System.out.println("Calling " + nameCaller + " With number " + number + " Number my phone " + this.number);
     }
+
+
+
     public void sendMessage(String[] numbers){
         System.out.println("Numbers to witch messages will be send from number: " + this.number);
         for(String i : numbers){

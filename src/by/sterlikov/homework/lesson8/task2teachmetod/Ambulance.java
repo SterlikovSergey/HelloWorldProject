@@ -9,22 +9,22 @@ public class Ambulance {
         Patient[] patients = getPatients();
         for (Patient i: patients){
             setMedicalPlan(knowPatient);
-            Doctor fistDoctor = getDoctorToPacient(knowPatient);
+            Doctor fistDoctor = getDoctorToPatient(knowPatient);
             fistDoctor.heal();
         }
         // 2 прописать план лечения
         setMedicalPlan(knowPatient);
         setMedicalPlan(unknowPatient);
         // 3 выделить доктора
-        Doctor fistDoctor = getDoctorToPacient(knowPatient);
-        Doctor secondDoctor = getDoctorToPacient(unknowPatient);
+        Doctor fistDoctor = getDoctorToPatient(knowPatient);
+        Doctor secondDoctor = getDoctorToPatient(unknowPatient);
         // 4 вылечить
         fistDoctor.heal();
         secondDoctor.heal();
     }
-        private static Doctor getDoctorToPacient (Patient pacient){
-               if(pacient.getMedicalPlan() ==1) return new Terapist();
-               if(pacient.getMedicalPlan() == 2) return new Dentist();
+        private static Doctor getDoctorToPatient(Patient patient){
+               if(patient.getMedicalPlan() ==1) return new Terapist();
+               if(patient.getMedicalPlan() == 2) return new Dentist();
                return new Surgeun();
         }
         private static void setMedicalPlan (Patient patient){

@@ -19,7 +19,7 @@ public class StringBuilderExample {
         builder.insert(9,"First ");
         builder.delete(16,20);
         System.out.println(builder.indexOf("first"));
-        //System.out.println(builder.replace(0,3,"abc"));
+        System.out.println(result + "replace " + builder.replace(0,3,"abc"));
         builder.reverse();   // сторока задом на перед;
 
         System.out.println(builder.toString());

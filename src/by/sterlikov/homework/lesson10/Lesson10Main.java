@@ -2,7 +2,6 @@ package by.sterlikov.homework.lesson10;
 
 public class Lesson10Main {
     public static void main(String[] args) {
-
         String numberOfDocument = "1234-Abc-5678-dEf-9g10J";
 
         inOneLineTheFirstTwoBlocks(numberOfDocument);
@@ -28,18 +27,30 @@ public class Lesson10Main {
     static public void onlyOneLetterLowerCase(String string){       //// Вывести на экран только одни буквы из номера документа в формате yyy/yyy/y/y в нижнем регистре.
         String newString = string.toLowerCase().replaceAll("[ \\d]", "");
         System.out.println("Main: " + newString.replace('-','/'));
+        String newString2 = string.toLowerCase();
+        String[] arr = newString2.split("-");
+        char sim = '/';
+        String litters = arr[1] + sim + arr[3] + sim + arr[4].charAt(1) + sim + arr[4].substring(4);
+        System.out.println("Alternative: " + litters);
     }
     static public void onlyOneLetterLowerCaseStringBuilder(String string){ //Вывести на экран буквы из номера документа в формате "Letters:yyy/yyy/y/y"
         String stringLow = string.toLowerCase();                            // в верхнем регистре(реализовать с помощью класса StringBuilder)
         String newString = stringLow.replaceAll("[ \\d]", "");
         String result = newString.replace('-','/');
         StringBuilder builder = new StringBuilder("Letters: ");
-        System.out.println(builder.append(result));
+        System.out.println("Main: " + builder.append(result));
+        String newString2 = string.toLowerCase();
+        String[] arr = newString2.split("-");
+        char sim = '/';
+        String litters = arr[1] + sim + arr[3] + sim + arr[4].charAt(1) + sim + arr[4].substring(4);
+        StringBuilder builder2 = new StringBuilder("Letters: ");
+        StringBuilder rez = builder2.append(litters);
+        System.out.println("Alternative: " + rez);
     }
     static public void subsequenceABC(String string){   //Проверить содержит ли номер документа последовательность abc
         String subString = "ABC".toLowerCase();         //и вывети сообщение содержит или нет(причем, abc и ABC считается одинаковой последовательностью).
         if(string.toLowerCase().contains(subString))
-        System.out.println("String  " + string + ", contains the sequence  " + subString);
+        System.out.println("String  " + string + ", contains the sequence " + subString);
     }
     static public void subsequenceIntro123(String string){  //Проверить начинается ли номер документа с последовательности 123.
         if(string.startsWith("123"))
@@ -49,5 +60,4 @@ public class Lesson10Main {
         if(string.endsWith("9g10J"))
             System.out.println("String  " + string + ", contains the sequence 9g10J");
     }
-
 }

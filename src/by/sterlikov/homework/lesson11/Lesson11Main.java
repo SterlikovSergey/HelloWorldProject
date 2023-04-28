@@ -10,11 +10,13 @@ public class Lesson11Main {
         }catch (WrongAnswerExceptionABC e){
             System.out.println(e.getAnswer() + " intercepted " + e.getMessage() + numberOfDocument);
         }
+
         try{
             revealSubsequenceIntro123(numberOfDocument,"321");
         }catch (WrongAnswerException123 e){
             System.out.println(e.getAnswer() + " intercepted " + e.getMessage() + numberOfDocument);
         }
+
         try{
             revealSubsequenceEnd9g10J(numberOfDocument,"9g10J");
         }catch (WrongAnswerException9G10J e){
@@ -36,7 +38,6 @@ public class Lesson11Main {
              } else {
                  throw new WrongAnswerExceptionABC("Not contains the sequence ", subString);
              }
-             throw new Exception();
         }
         static public void revealSubsequenceIntro123(String message, String subString) throws Exception{  //Проверить начинается ли номер документа с последовательности 123.
             if(message.startsWith(subString)) {

@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class FileWriterExample {
     public static void main(String[] args) {
-        try (FileWriter fileWriter = new FileWriter("abc.doc", true);){ //дописать в конец фала (true)
+        try (FileWriter fileWriter = new FileWriter("abc.doc", true);) { //дописать в конец фала (true)
 
             fileWriter.write("this is my string\n");
             fileWriter.write("this is my second string\n");

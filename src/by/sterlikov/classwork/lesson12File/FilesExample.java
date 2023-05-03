@@ -32,11 +32,9 @@ public class FilesExample {
         System.out.println(file.setWritable(false));// ограничение на запись 
 
 
-
-
-        try{
+        try {
             System.out.println(file.createNewFile()); // создаём файл по указанному пути обьявленному при созданиии обьекта
-        }catch (IOException e){
+        } catch (IOException e) {
             System.out.println("File is not create");
         }
 

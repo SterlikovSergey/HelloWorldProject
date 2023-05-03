@@ -13,16 +13,16 @@ public class CarWriterExample {
         }
 
         try (FileOutputStream outputStream = new FileOutputStream("car.doc");
-             ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream)){
+             ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream)) {
 
-            Car lada = new Car(100,"LlADA");
+            Car lada = new Car(100, "LlADA");
 
             lada.setUnneededValue(100);
             objectOutputStream.writeObject(lada);
-            objectOutputStream.writeObject(new Car(1000,"BMW"));
+            objectOutputStream.writeObject(new Car(1000, "BMW"));
 
 
-        } catch (IOException e){
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

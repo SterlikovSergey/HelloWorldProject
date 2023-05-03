@@ -8,15 +8,15 @@ import java.io.ObjectInputStream;
 public class CarReaderExample {
     public static void main(String[] args) {
         try (FileInputStream inputStream = new FileInputStream("car.doc");
-             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream)){
+             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream)) {
 
             while (true) {
                 Car mCcar = (Car) objectInputStream.readObject();
                 System.out.println(mCcar);
             }
         } catch (IOException e) {
-           // throw new RuntimeException(e);
-        } catch (ClassNotFoundException e){
+            // throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
             throw new RuntimeException();
         }
     }

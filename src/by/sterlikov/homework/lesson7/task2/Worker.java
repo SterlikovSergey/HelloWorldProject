@@ -1,6 +1,6 @@
 package by.sterlikov.homework.lesson7.task2;
 
-public class Worker implements Printed{
+public class Worker implements Printed {
     private String nameClass;
 
     public Worker() {

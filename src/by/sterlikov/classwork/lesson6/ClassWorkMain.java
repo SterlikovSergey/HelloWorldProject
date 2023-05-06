@@ -2,7 +2,7 @@ package by.sterlikov.classwork.lesson6;
 
 public class ClassWorkMain {
     public static void main(String[] args) {
-        Car myBMW = new Car("green",2023, "BMW",4,true);    // command P
+        Car myBMW = new Car("green", 2023, "BMW", 4, true);    // command P
         System.out.println(myBMW.getColor());
         myBMW.setColor("black");
         System.out.println(myBMW.getColor());

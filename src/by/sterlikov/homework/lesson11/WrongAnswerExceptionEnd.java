@@ -5,6 +5,5 @@ public class WrongAnswerExceptionEnd extends WrongAnswer {
         super(message, answer);
 
 
-
     }
 }

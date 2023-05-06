@@ -29,16 +29,17 @@ public class MainBestException {
         }
         System.out.println("This is the end");
     }
-    private static  boolean checkAge(int currentAge, int guessedAge) throws MyBestException {
+
+    private static boolean checkAge(int currentAge, int guessedAge) throws MyBestException {
 
         int result = currentAge - guessedAge;
 
-        if(result == 0){
+        if (result == 0) {
             System.out.println("You are right");
             return false;                           // если есть return, else не нужен
         }
 
-        if (result >-5 && result < 5){
+        if (result > -5 && result < 5) {
             System.out.println("Try again");
             return true;
         }

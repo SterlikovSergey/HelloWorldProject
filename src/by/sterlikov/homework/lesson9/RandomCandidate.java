@@ -8,6 +8,7 @@ public class RandomCandidate {
     static {
         count = 0;
     }
+
     public RandomCandidate() {
         count++;
     }

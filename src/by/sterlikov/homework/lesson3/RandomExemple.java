@@ -7,17 +7,9 @@ public class RandomExemple {
         int theNumber = (int) (Math.random() * 200 + 1);
 
 
-
-
-
         Random random = new Random();
-        for (int i = 0; i < 100; i+=5) {
+        for (int i = 0; i < 100; i += 5) {
             System.out.println(random.nextInt());
-
-
-
-
-
 
         }
     }

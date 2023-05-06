@@ -4,7 +4,7 @@ public class CreditCard {
     private int accountNumber;
     private int currentAccountBalance;
 
-    public CreditCard(){
+    public CreditCard() {
 
     }
 
@@ -29,17 +29,17 @@ public class CreditCard {
         this.currentAccountBalance = currentAccountBalance;
     }
 
-    public void checkBalance (){
+    public void checkBalance() {
         System.out.println("Balance your card number " + accountNumber + " -: " + currentAccountBalance + " rub.");
     }
 
-    public void addMoneyToCard (int money){
+    public void addMoneyToCard(int money) {
         currentAccountBalance += money;
         System.out.println("Added to your bank card number " + accountNumber + " -; " + money + " rub.");
     }
 
-    public void removedMoneyFromCard(int money){
-        if (currentAccountBalance - money >= 0){
+    public void removedMoneyFromCard(int money) {
+        if (currentAccountBalance - money >= 0) {
             currentAccountBalance -= money;
             System.out.println("Removed from the card number " + accountNumber + " -; " + money + " rub.");
             checkBalance();

@@ -5,7 +5,7 @@ import javax.swing.*;
 public class Exemple extends JFrame {
     private JButton okButton;
     private JTextField textField1;
-    private  JPasswordField passwordField1;
+    private JPasswordField passwordField1;
 
     private JLabel panel;
     private JPanel panel1;

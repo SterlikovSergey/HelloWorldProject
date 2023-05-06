@@ -12,8 +12,8 @@ public class TaskTwo {
         System.out.println("Enter the size of the array:");
 
         int sizeOfTheArray = scanner.nextInt();
-        int array [] = new int[sizeOfTheArray];
-        for(int i = 0; i < array.length; i++ ){
+        int array[] = new int[sizeOfTheArray];
+        for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(100);
         }
         System.out.println("Array created and filled with random numbers from 1 to 100 ");
@@ -23,11 +23,12 @@ public class TaskTwo {
         int minValue = Integer.MAX_VALUE;
         double sumOfArrayValues = 0;
 
-        for(int i = 0; i < array.length; i++ ){
+        for (int i = 0; i < array.length; i++) {
             sumOfArrayValues += array[i];
-            if (array[i] > maxValue){
+            if (array[i] > maxValue) {
                 maxValue = array[i];
-            } if (array[i] < minValue){
+            }
+            if (array[i] < minValue) {
                 minValue = array[i];
             }
         }

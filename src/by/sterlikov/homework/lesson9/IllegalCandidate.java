@@ -8,6 +8,7 @@ public class IllegalCandidate {
     static {
         count = 0;
     }
+
     public IllegalCandidate() {
         count++;
     }

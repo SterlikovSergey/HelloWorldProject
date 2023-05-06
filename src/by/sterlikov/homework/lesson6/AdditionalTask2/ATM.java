@@ -25,26 +25,28 @@ public class ATM {
         this.countOfBanknotes100 = countOfBanknotes100;
     }
 
-    public void addMoney(int money){
-        if(money == 20){
+    public void addMoney(int money) {
+        if (money == 20) {
             countOfBanknotes20 += 1;
             moneyOnBalance += money;
             System.out.println("Credit to your balance - " + money + " rub.");
-        } if(money == 50){
-            countOfBanknotes50 +=1;
+        }
+        if (money == 50) {
+            countOfBanknotes50 += 1;
             moneyOnBalance += money;
             System.out.println("Credit to your balance - " + money + " rub.");
-        } if(money == 100){
-            countOfBanknotes100 +=1;
+        }
+        if (money == 100) {
+            countOfBanknotes100 += 1;
             moneyOnBalance += money;
             System.out.println("Credit to your balance - " + money + " rub.");
-        } else  {
+        } else {
             System.out.println("Banknotes accepted only in denominations of 20, 50, 100");
         }
     }
 
-    public boolean removedMoney (int money){
-        if (moneyOnBalance > 0){
+    public boolean removedMoney(int money) {
+        if (moneyOnBalance > 0) {
             moneyOnBalance -= money;
         } else {
             System.out.println("No money");

@@ -1,6 +1,6 @@
 package by.sterlikov.homework.lesson8.task2;
 
-public class Patient extends TreatmentPlan{
+public class Patient extends TreatmentPlan {
     private int plan;
 
     public int getPlan() {
@@ -13,10 +13,10 @@ public class Patient extends TreatmentPlan{
 
     public Patient(int plan) {
         this.plan = plan;
-        if (plan == 1){
+        if (plan == 1) {
             TreatmentPlan treatmentPlan = new TreatmentPlan();
             System.out.println(treatmentPlan.tplan(1));
-        } else if (plan == 2){
+        } else if (plan == 2) {
             TreatmentPlan treatmentPlan = new TreatmentPlan();
             System.out.println(treatmentPlan.tplan(2));
         } else {

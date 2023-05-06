@@ -1,6 +1,6 @@
 package by.sterlikov.homework.lesson7.task2;
 
-public class Accountant implements Printed{
+public class Accountant implements Printed {
     private String nameClass;
 
     public Accountant() {

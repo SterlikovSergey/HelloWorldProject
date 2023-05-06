@@ -16,7 +16,8 @@ public class Lesson7Main {
         duck.flyWithSound();
         duck.printMessage();
 
-        ball.fly();;
+        ball.fly();
+        ;
         ball.flyWithSound();
         ball.printMessage();
 
@@ -25,10 +26,11 @@ public class Lesson7Main {
         apple.printMessage();
 
         Flyable[] flyableItems = getFlyableItems();
-        for (Flyable flyable: flyableItems){
+        for (Flyable flyable : flyableItems) {
             flyable.flyWithSound();
         }
     }
+
     private static Flyable[] getFlyableItems() {      //select and -  command option M !
         Flyable[] flyableItems = new Flyable[6];
         flyableItems[0] = new Duck();

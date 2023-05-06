@@ -10,11 +10,11 @@ public class MultiArray {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int [][][] multiArray = new int[3][3][3];
+        int[][][] multiArray = new int[3][3][3];
 
-        for (int i = 0; i < multiArray.length; i++){
-            for (int j = 0; j < multiArray[i].length; j++){
-                for (int k = 0; k < multiArray[i][j].length; k++){
+        for (int i = 0; i < multiArray.length; i++) {
+            for (int j = 0; j < multiArray[i].length; j++) {
+                for (int k = 0; k < multiArray[i][j].length; k++) {
                     multiArray[i][j][k] = random.nextInt(5);
                 }
             }
@@ -25,9 +25,9 @@ public class MultiArray {
 
         int count = scanner.nextInt();
 
-        for (int i = 0; i < multiArray.length; i++){
-            for (int j = 0; j < multiArray[i].length; j++){
-                for (int k = 0; k < multiArray[i][j].length; k++){
+        for (int i = 0; i < multiArray.length; i++) {
+            for (int j = 0; j < multiArray[i].length; j++) {
+                for (int k = 0; k < multiArray[i][j].length; k++) {
                     multiArray[i][j][k] += count;
                 }
             }

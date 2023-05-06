@@ -13,7 +13,7 @@ public class Car {
     private String superBrand;
     int wheelNumber;
     boolean radio;
-    private int currentSpeed  = 0;
+    private int currentSpeed = 0;
 
     public Car(String color, int age, String superBrand, int wheelNumber, boolean radio) {
         this.color = color;
@@ -66,37 +66,38 @@ public class Car {
         this.radio = radio;
     }
 
-    public void starterDriving(){
+    public void starterDriving() {
         System.out.println("woof-woof");
     }
 
-    public void goDirectly(){
+    public void goDirectly() {
         System.out.println("my car is going");
     }
 
-    public void goDirectly(int currentSpeed){
+    public void goDirectly(int currentSpeed) {
         System.out.println("my car is going" + currentSpeed + "currentSpeed"); // перезагрузка, используем тот же метод плюс параметр
     }
 
-    public void switchDirection(boolean  isRightOne){
-        if (currentSpeed > 30){
+    public void switchDirection(boolean isRightOne) {
+        if (currentSpeed > 30) {
             System.out.println("don't turn !!! ");
             return;
         }
-        if(isRightOne){
+        if (isRightOne) {
             System.out.println("going right");
         } else {
             System.out.println("going left");
         }
     }
 
-    public void intSpeedChange(int speedChange){
-        currentSpeed =  currentSpeed + speedChange;
-        if(speedChange >  0){
+    public void intSpeedChange(int speedChange) {
+        currentSpeed = currentSpeed + speedChange;
+        if (speedChange > 0) {
             System.out.println("moving faster " + currentSpeed);
         } else {
             System.out.println("moving slower" + currentSpeed);
-        } if(currentSpeed <= 0){
+        }
+        if (currentSpeed <= 0) {
             System.out.println("your car stop");
         }
     }

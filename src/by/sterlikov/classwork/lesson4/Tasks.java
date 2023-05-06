@@ -11,24 +11,27 @@ public class Tasks {
 
         System.out.println("Input length array : ");
         int inputLength = scanner.nextInt();
-        int array [] = new int[inputLength];
+        int array[] = new int[inputLength];
 
         int maxArray = Integer.MIN_VALUE;
         int minArray = Integer.MAX_VALUE;
         int counterTwo = 0;
         int even = 0;
 
-        for(int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(100);
         }
-        for (int i = 0; i < array.length; i++){
-            if (array[i] > maxArray){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > maxArray) {
                 maxArray = array[i];
-            } if (array[i] < minArray) {
+            }
+            if (array[i] < minArray) {
                 minArray = array[i];
-            } if (array[i] == 2){
-                counterTwo ++;
-            } if (array[i] % 2 == 0){
+            }
+            if (array[i] == 2) {
+                counterTwo++;
+            }
+            if (array[i] % 2 == 0) {
                 even++;
             }
         }

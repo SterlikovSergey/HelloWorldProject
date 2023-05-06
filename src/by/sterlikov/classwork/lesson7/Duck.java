@@ -1,6 +1,6 @@
 package by.sterlikov.classwork.lesson7;
 
-public class Duck implements Flyable{
+public class Duck implements Flyable {
     @Override
     public void fly() {
         System.out.println("Duck fly is not sound");
@@ -11,7 +11,6 @@ public class Duck implements Flyable{
         System.out.println("Duck fly and sound Zzzzzzzzz");
 
     }
-
     @Override
     public void printMessage() {
         Flyable.super.printMessage();

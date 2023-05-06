@@ -7,17 +7,17 @@ public class ExceptionExample {
         Scanner scanner = new Scanner(System.in);
         int result;
         // возможны конструкции без catch и без finally
-        try{
-            result = 2/1;
+        try {
+            result = 2 / 1;
             try {                           // по примеру if возможно  несколько try
-                result = 2/0;
-            }catch (Exception e){
+                result = 2 / 0;
+            } catch (Exception e) {
 
             }
-        } catch (ArithmeticException | IndexOutOfBoundsException e){  // обработать ошибку возможно и две
+        } catch (ArithmeticException | IndexOutOfBoundsException e) {  // обработать ошибку возможно и две
             System.out.println("OOPS");
             result = 0;
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("OOps");
             result = -1;
         } finally {                                 // выполняется в первую очередь

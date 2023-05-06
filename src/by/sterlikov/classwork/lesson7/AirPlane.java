@@ -1,6 +1,6 @@
 package by.sterlikov.classwork.lesson7;
 
-public class AirPlane implements Flyable{
+public class AirPlane implements Flyable {
 
     @Override
     public void fly() {

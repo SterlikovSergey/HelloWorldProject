@@ -1,6 +1,6 @@
 package by.sterlikov.homework.lesson7.task2;
 
-public class Director implements Printed{
+public class Director implements Printed {
     private String nameClass;
 
     public Director() {

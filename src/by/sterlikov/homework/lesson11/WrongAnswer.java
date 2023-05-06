@@ -10,8 +10,9 @@ public class WrongAnswer extends Exception {
     public void setAnswer(String answer) {
         this.answer = answer;
     }
+
     public WrongAnswer(String message, String answer) {
         super(message);
-        this.answer  = answer;
+        this.answer = answer;
     }
 }

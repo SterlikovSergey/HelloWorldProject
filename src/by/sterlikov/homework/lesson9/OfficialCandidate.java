@@ -8,6 +8,7 @@ public class OfficialCandidate {
     static {
         count = 0;
     }
+
     public OfficialCandidate() {
         count++;
     }

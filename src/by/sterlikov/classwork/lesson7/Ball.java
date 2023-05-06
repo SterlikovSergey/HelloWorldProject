@@ -1,6 +1,6 @@
 package by.sterlikov.classwork.lesson7;
 
-public class Ball implements Flyable{
+public class Ball implements Flyable {
     @Override
     public void fly() {
         System.out.println("Ball is fly no sound");

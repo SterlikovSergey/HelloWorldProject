@@ -2,10 +2,12 @@ package by.sterlikov.homework.lesson7.task1;
 
 public class Circle extends Figure {
     private String nameFigure;
-    private static String NAME = "circle" ;
-    private double  radius;
+    private static String NAME = "circle";
+    private double radius;
+
     public Circle() {
     }
+
     public Circle(String nameFigure) {
         this.nameFigure = nameFigure;
     }
@@ -18,12 +20,15 @@ public class Circle extends Figure {
     public String getNameFigure() {
         return nameFigure;
     }
+
     public void setNameFigure(String nameFigure) {
         this.nameFigure = nameFigure;
     }
+
     public double getRadius() {
         return radius;
     }
+
     public void setRadius(double radius) {
         this.radius = radius;
     }

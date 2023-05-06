@@ -20,8 +20,8 @@ public class Lesson10Main2 {
         System.out.println(str.lastIndexOf("is"));
         System.out.println(str.indexOf("is", 15)); //если вернул  отрицательное значение, значит не нашёл!
 
-        System.out.println(str.replaceFirst("","a"));  // замена regex  на другое в replacement
-        System.out.println(str.replaceAll("","a"));    // замена regex  на другое в replacement
+        System.out.println(str.replaceFirst("", "a"));  // замена regex  на другое в replacement
+        System.out.println(str.replaceAll("", "a"));    // замена regex  на другое в replacement
 
         String str4 = "abra";
         System.out.println(str4.repeat(5));    // склеить строку n раз
@@ -39,10 +39,6 @@ public class Lesson10Main2 {
         String result = String.valueOf(myValue); // точно  одна строка !!!
         String result2 = 125 + ""; // неизвестно сколько сторок  в значении result2 !!!
         System.out.println(result + " " + result2);
-
-
-
-
 
     }
 }

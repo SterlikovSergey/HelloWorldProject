@@ -38,7 +38,7 @@ public class Phone {
     }
 
     public Phone(String number, String model, double weight) {
-        this(number,model);
+        this(number, model);
         this.number = number;
         this.model = model;
         this.weight = weight;
@@ -53,24 +53,25 @@ public class Phone {
                 '}';
     }
 
-    public void receiveCall(String nameCaller){
+    public void receiveCall(String nameCaller) {
         System.out.println("Calling on my phone " + nameCaller);
     }
-    public void receiveCall(String nameCaller, String number){
+
+    public void receiveCall(String nameCaller, String number) {
         System.out.println("Calling " + nameCaller + " With number " + number + " Number my phone " + this.number);
     }
 
 
-
-    public void sendMessage(String[] numbers){
+    public void sendMessage(String[] numbers) {
         System.out.println("Numbers to witch messages will be send from number: " + this.number);
-        for(String i : numbers){
+        for (String i : numbers) {
             System.out.println(i);
         }
     }
-    public void sendMessage(String message, String... numbers){
-        System.out.println("From a phone number: " + this.number +" Message :" + message + " for numbers:" );
-        for(String i : numbers){
+
+    public void sendMessage(String message, String... numbers) {
+        System.out.println("From a phone number: " + this.number + " Message :" + message + " for numbers:");
+        for (String i : numbers) {
             System.out.println(i);
         }
     }

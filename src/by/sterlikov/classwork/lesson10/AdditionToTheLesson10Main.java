@@ -7,6 +7,4 @@ public class AdditionToTheLesson10Main {
         System.out.println(example.contains("my"));  // есть ли в строке
 
     }
-
-
 }

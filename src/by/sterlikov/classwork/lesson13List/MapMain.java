@@ -26,25 +26,25 @@ public class MapMain {
 
         List<Integer> integers;
         List<List<Integer>> integers2;
+
         Map<String, List<String>> map = new HashMap<>();
-        // у меня есть computers - (lenova asus )
+        // у меня есть computers - (lenovo asus )
         // phones (samsung iphone)
 
         List<String> computers = new ArrayList<>();
         computers.add("asus");
+        computers.add("lenovo");
         List<String> phones = new ArrayList<>();
         phones.add("iphone");
+        phones.add("samsung");
 
         map.put("computers", computers);
         map.put("phones", phones);
 
-        map.get(phones).add("samsung");// сохранится и в листе телефоны и в МАР
+        map.get("phones").add("samsung2");// сохранится и в листе телефоны и в МАР
 
         System.out.println(map);
-        // arrayList
-        // HashSet
-        // Map + List - Map<String, List<String>> map =  new HashMap<>();
-        // List
+        System.out.println(phones);
 
         firstMap.put(3, "yellow");
         System.out.println(firstMap.keySet());// вернет ключи

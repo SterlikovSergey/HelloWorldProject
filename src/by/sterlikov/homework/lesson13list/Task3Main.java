@@ -10,19 +10,19 @@ public class Task3Main {
         Map<String, List<String>> product = new HashMap<>();
         List<String> fruits = new ArrayList<>();
         String category = "fruits";
-        product.put(category,fruits);
-        product.put(category,  new ArrayList<>());
+        product.put(category, fruits);
+        product.put(category, new ArrayList<>());
 
         extracted(product, category);
 
-        if (category.equals("fruits")){
+        if (category.equals("fruits")) {
             fruits.add("Apple");
         }
     }
 
     private static void extracted(Map<String, List<String>> product, String category) {
         List<String> categoryProducts = product.get(category);
-        if(categoryProducts == null){
+        if (categoryProducts == null) {
             System.out.println("no this category");
         } else {
             categoryProducts.add("Apple");

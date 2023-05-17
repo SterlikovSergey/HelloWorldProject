@@ -8,17 +8,17 @@ import java.util.*;
 
 public class TAsk2Main {
     public static void main(String[] args) throws FileNotFoundException {
-        String fileName = "abc.doc";
-        List<Integer> numbers = new ArrayList<>();
-        if(!new File(fileName).exists()){
+        String fileName = "/Users/sergeysterlikov/Desktop/FileForLesson12.txt";
+        if (!new File(fileName).exists()) {
             throw new FileNotFoundException("File " + fileName + " dont exist");
         }
         try (FileReader reader = new FileReader(fileName);
-             Scanner scanner = new Scanner("123 548 6432 586 64 21")){
-            while (scanner.hasNext()){
-                int rez = scanner.nextInt();
-                numbers.add(rez);
-                System.out.println(scanner.nextInt());
+             Scanner scanner = new Scanner(reader)) {
+            while (scanner.hasNext()) {
+                String[] arrayString = scanner.nextLine().split(" ");
+                Set<String> numbers = new TreeSet<>(List.of(arrayString));
+                System.out.println(Arrays.toString(arrayString));
+                System.out.println(numbers);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -10,7 +10,6 @@ public class ListsMain {
         strings.add("string");              // arrayList хранит  в том порядке как добавлено
         strings.add("is");
         strings.add("beautiful");
-
         secondStrings.add("Hello");
         secondStrings.add("World");
 
@@ -32,7 +31,6 @@ public class ListsMain {
         System.out.println(strings);
         System.out.println("size strings " + strings.size());
 
-
         Collections.sort(secondStrings);
         System.out.println(secondStrings);
         Collections.reverse(secondStrings);
@@ -43,6 +41,5 @@ public class ListsMain {
         for (String str : strings) {
             System.out.println(str);
         }
-
     }
 }

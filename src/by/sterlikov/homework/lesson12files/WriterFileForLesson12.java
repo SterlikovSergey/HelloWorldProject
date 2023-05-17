@@ -9,10 +9,10 @@ public class WriterFileForLesson12 {
     public static void main(String[] args) {
         File file = new File("/Users/sergeysterlikov/Desktop/FileForLesson12.txt");
 
-        try (FileWriter fileWriter = new FileWriter("/Users/sergeysterlikov/Desktop/FileForLesson12.txt", true)) {
+        try (FileWriter fileWriter = new FileWriter("/Users/sergeysterlikov/Desktop/FileForLesson12.txt")) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter number of document");
-            StringBuilder stringBuilder = new StringBuilder("docnum");
+            StringBuilder stringBuilder = new StringBuilder();
             String infoDoc = String.valueOf(stringBuilder.append(scanner.nextLine()) + "\n");
             fileWriter.write(infoDoc);
         } catch (Exception e) {

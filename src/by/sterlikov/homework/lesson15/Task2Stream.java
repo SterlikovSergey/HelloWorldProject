@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 public class Task2Stream {
     public static void main(String[] args) {
-        Collection<Students> students = Arrays.asList(new Students("Sergey")                              // Почему не работает с ArrayList?
+        List<Students> students = Arrays.asList(new Students("Sergey")                              // Почему не работает с ArrayList?
                 , new Students("Nikolay"), new Students("Valentina"), new Students("Andrey")
                 , new Students("Maksim"), new Students("Yulia"), new Students("Sergey"),
                 new Students("Anton"));
@@ -18,7 +18,7 @@ public class Task2Stream {
 //                .filter("Sergey"::equals).count());
 
         System.out.println(studentsStream
-                .filter(vS -> vS.getName().startsWith("A"))
+                .filter(vS -> vS.getName().toLowerCase().startsWith("A"))
                 .collect(Collectors.toList()));
 
         System.out.println(studentsStream

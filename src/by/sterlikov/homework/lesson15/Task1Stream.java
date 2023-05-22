@@ -47,7 +47,8 @@ public class Task1Stream {
         );
 
         System.out.println(valueStream
-                .mapToInt((vS) -> Integer.parseInt(String.valueOf(vS))).average());
+                .mapToInt((vS) -> Integer.parseInt(String.valueOf(vS)))
+                .average());
     }
 
     public static List<Integer> newRandomList(int min, int max, int count) {

@@ -1,13 +1,13 @@
 package by.sterlikov.homework.lesson15;
 
-public class Student {
+public class Students {
     private String name;
 
-    public Student(String name) {
+    public Students(String name) {
         this.name = name;
     }
 
-    public Student() {
+    public Students() {
     }
 
     public String getName() {
@@ -16,8 +16,9 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Students{" +
                 "name='" + name + '\'' +
                 '}';
     }
 }
+

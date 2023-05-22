@@ -1,10 +1,12 @@
 package by.sterlikov.homework.lesson15;
 
-import java.util.*;
+import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamTask1 {
+
+public class Task1Stream {
     public static void main(String[] args) {
         Random random = new Random();
 //        //List<Integer> valuesList = new ArrayList<>();
@@ -55,3 +57,5 @@ public class StreamTask1 {
                 .boxed().toList();
     }
 }
+
+

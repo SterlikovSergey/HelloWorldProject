@@ -1,0 +1,9 @@
+{
+  "name": "Pavel",
+  "age": 20,
+  "document": [
+    "first",
+    "second"
+  ],
+  "is_rich": null
+}

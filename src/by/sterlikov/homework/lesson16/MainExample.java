@@ -11,16 +11,16 @@ public class MainExample {
     public static void main(String[] args) {
         List<Book> books = getBooks();
 
-        Map<Integer, List<Book>> booksByYear = books
+/*        Map<Integer, List<Book>> booksByYear = books
                 .stream()
                 .collect(Collectors.groupingBy(Book::getYearPublishing));
-        System.out.println(booksByYear);
+        System.out.println(booksByYear);*/
 
-/*        Map<Integer,List<Book>> bookByNameTitle = books
+        Map<String,List<Book>> bookByNameTitle = books
                 .stream()
-                .flatMap(book -> book
-                        .g
-                        )*/
+                .collect(Collectors.groupingBy(Book::getAuthor));
+        System.out.println(bookByNameTitle);
+
 
     }
 

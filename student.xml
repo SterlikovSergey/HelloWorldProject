@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student>
+    <course>
+        <name>first</name>
+    </course>
+    <gender>male</gender>
+    <id>1</id>
+    <name>Pavel</name>
+</student>

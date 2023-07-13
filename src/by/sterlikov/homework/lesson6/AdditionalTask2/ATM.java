@@ -4,7 +4,7 @@ public class ATM {
 
     private int countOfBanknotes20 = 0;
     private int countOfBanknotes50 = 0;
-    private int countOfBanknotes100;
+    private int countOfBanknotes100 = 0;
     private int moneyOnBalance;
 
     public ATM() {
@@ -25,6 +25,16 @@ public class ATM {
         this.countOfBanknotes100 = countOfBanknotes100;
     }
 
+    @Override
+    public String toString() {
+        return "ATM{" +
+                "countOfBanknotes20=" + countOfBanknotes20 +
+                ", countOfBanknotes50=" + countOfBanknotes50 +
+                ", countOfBanknotes100=" + countOfBanknotes100 +
+                ", moneyOnBalance=" + moneyOnBalance +
+                '}';
+    }
+
     public void addMoney(int money) {
         if (money == 20) {
             countOfBanknotes20 += 1;
@@ -43,6 +53,7 @@ public class ATM {
         } else {
             System.out.println("Banknotes accepted only in denominations of 20, 50, 100");
         }
+
     }
 
     public boolean removedMoney(int money) {

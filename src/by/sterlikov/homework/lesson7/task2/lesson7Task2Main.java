@@ -1,5 +1,7 @@
 package by.sterlikov.homework.lesson7.task2;
 
+import java.util.List;
+
 public class lesson7Task2Main {
     public static void main(String[] args) {
 
@@ -7,6 +9,7 @@ public class lesson7Task2Main {
         Printed[] company = {new Accountant("Accountant"),
                 new Director("Director"),
                 new Worker("WWorker")};
+
 
         for (Printed comp : company) {
             comp.printedNameClass();

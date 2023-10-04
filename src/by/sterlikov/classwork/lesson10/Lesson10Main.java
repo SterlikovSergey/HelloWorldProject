@@ -14,11 +14,11 @@ public class Lesson10Main {
         System.out.println(addString);
         System.out.println(str.concat(str2));
         String[] arr = new String[]{str2, str, str3};
-        System.out.println(String.join(". ", str2, str, str3));         // использовать для обьеденения строк
+        System.out.println(String.join(". ", str2, str, str3));     // использовать для обьеденения строк
         System.out.println(String.join(". ", arr));
 
         String myBestString = "      This is my best string (space)    ";
-        System.out.println(myBestString = myBestString.trim());                 // убирает пробелы в начале и в конце строки
+        System.out.println(myBestString = myBestString.trim());            // убирает пробелы в начале и в конце строки
         myBestString = myBestString.trim();
 
         System.out.println(myBestString.length());
@@ -37,8 +37,8 @@ public class Lesson10Main {
         }
         System.out.println("Count " + count);
 
-        System.out.println(myBestString.substring(4));                    // возвращает строку с указанной точки отсчёта
-        System.out.println(myBestString.substring(4, 10));                           //  в выбранном диапазоне
+        System.out.println(myBestString.substring(4));       // возвращает строку с указанной точки отсчёта
+        System.out.println(myBestString.substring(4, 10));              //  в выбранном диапазоне
 
     }
 }

@@ -28,7 +28,7 @@ public class HelloWorld {
         System.out.println(isTrue);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your name please "); // command / - закоментировать выделенный  код
+        System.out.println("Enter your name please ");
         String str = scanner.nextLine();
         System.out.println(str + " Hello World");
 

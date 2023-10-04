@@ -1,8 +1,6 @@
 package by.sterlikov.classwork.lesson18sax;
 
 
-
-
 public class Article {
     private String title;
     private String content;

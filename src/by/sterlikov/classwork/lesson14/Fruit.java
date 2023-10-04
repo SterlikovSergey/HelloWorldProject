@@ -1,9 +1,9 @@
 package by.sterlikov.classwork.lesson14;
 
 public class Fruit {
-    private String name;
-    private int weight;
-    private String color;
+    private final String name;
+    private final int weight;
+    private final String color;
 
     public Fruit(String name, int weight, String color) {
         this.name = name;

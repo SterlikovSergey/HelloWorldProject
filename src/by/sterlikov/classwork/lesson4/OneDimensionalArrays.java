@@ -8,7 +8,10 @@ public class OneDimensionalArrays {
     public static void main(String[] args) {
 
         int[] array = {0, 1, 2};
-        int[] array2 = new int[5];
+        System.out.println(Arrays.toString(array));
+
+        int[] arratTwo = new int[5];
+        System.out.println(Arrays.toString(arratTwo));
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("input array length value");
@@ -16,7 +19,7 @@ public class OneDimensionalArrays {
         int[] array3 = new int[arrayLength];
         Random random = new Random();
         for (int i = 0; i < array3.length; i++) {
-            //array3[i] = i+1;
+            array3[i] = i + 1;
             //array3[i] = random.nextInt(10);
             System.out.println("Input array value");
             array3[i] = scanner.nextInt();

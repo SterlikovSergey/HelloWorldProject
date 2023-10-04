@@ -8,10 +8,10 @@ public class MultidimensionalArrays {
         Random random = new Random();
 
         int[] arr = new int[10];
-        int[] newArr = new int[10];
+        int[] newArray = new int[10];
         arr[0] = 1;
-        System.out.println(Arrays.equals(arr, newArr)); // !!!!!!!!!!!!!!!! important !!!!!!!!!!!!!!!!
-        System.out.println(Arrays.compare(arr, newArr));
+        System.out.println(Arrays.equals(arr, newArray)); // !!!!!!!!!!!!!!!! important !!!!!!!!!!!!!!!!
+        System.out.println(Arrays.compare(arr, newArray));
 
         int[][] multiArray = new int[10][10];
         for (int i = 0; i < multiArray.length; i++) {

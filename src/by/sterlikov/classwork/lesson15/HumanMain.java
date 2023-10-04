@@ -23,9 +23,8 @@ public class HumanMain {
 
         Optional<Human> fatherOpt = Optional.ofNullable(anonymous.getFather());
 
-        if (fatherOpt.isPresent()) {
-            System.out.println(fatherOpt.get().getName());          //не рекомендуемо
-        }
+        //не рекомендуемо
+        fatherOpt.ifPresent(value -> System.out.println(value.getName()));
         fatherOpt.ifPresent(f -> System.out.println(f.getName()));// рекомендую
 
         /*//Human possibleFather = fatherOpt.orElseThrow();
@@ -33,23 +32,23 @@ public class HumanMain {
         fatherOpt.ifPresentOrElse(fOpt -> System.out.println(fOpt.getName()),
                 () -> System.out.println("anonymous"));
 
-        Human protector = new Human("Prot", 100);
+        Human protector = new Human("Protector", 100);
 
-        Human ourDef = fatherOpt.orElse(protector);
+        Human ourDefense = fatherOpt.orElse(protector);
 
         Optional.ofNullable(human.getFather())
                 .orElse(getDefaultHuman());
 
         Optional.ofNullable(human.getFather())
-                .orElseGet(() -> getDefaultHuman());
+                .orElseGet(HumanMain::getDefaultHuman);
 
-        fatherOpt.map(fOpt -> fOpt.getFather())
-                .map(f -> f.getFather())
+        fatherOpt.map(Human::getFather)
+                .map(Human::getFather)
                 .ifPresent(ded -> System.out.println(ded.getName()));// проверяет и отца и имя отца
 
         Optional.ofNullable(human).map(Human::getFather)
                 .filter(f -> f.getName().startsWith("Ad"))       //вернуть имя с началом Ad
-                .ifPresent(f -> System.out.println(f));
+                .ifPresent(System.out::println);
 
         if (human.getFather() != null && human.getFather().getName() != null &&
                 human.getFather().getName().startsWith("Ad")) {            // без option
@@ -58,6 +57,6 @@ public class HumanMain {
 
     private static Human getDefaultHuman() {
         System.out.println("This is default human");
-        return new Human("prot", 100);
+        return new Human("Protector", 100);
     }
 }

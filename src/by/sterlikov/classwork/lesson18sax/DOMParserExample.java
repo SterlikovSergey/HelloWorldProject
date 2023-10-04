@@ -26,7 +26,7 @@ public class DOMParserExample {
                 Node current = nList.item(i); //every student
                 System.out.println("Element: " + current.getNodeName()); //it is student
                 Element element = (Element) current; //element have some properties that we want to use. it is the start of the search - student.search in student
-                System.out.println(element.getAttribute("rollno"));
+                System.out.println(element.getAttribute("roll"));
                 System.out.println(element.getElementsByTagName("firstname").item(0).getTextContent());
                 //index 0 because every student has only one first name
                 //getTextContent - show text between <> </>*/
@@ -35,6 +35,6 @@ public class DOMParserExample {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //lombok - i will not write getters setters constructors
+        //lombok - I will not write getters setters constructors
     }
 }

@@ -1,6 +1,6 @@
 package by.sterlikov.classwork.lesson13List;
 
-public class Person implements Comparable<Person>{ //  для работы с TreeSet наследовать интерфейс и перегруз метод compareTo
+public class Person implements Comparable<Person> { //для работы с TreeSet наследовать интерфейс и перегруз метод compareTo
     private String firstName;                   // что бы java знала как сортировать
     private String secondName;
 
@@ -53,7 +53,7 @@ public class Person implements Comparable<Person>{ //  для работы с Tr
 
     @Override
     public int compareTo(Person o) {// как делать что бы сравнить по двум именам
-        if(this.firstName.compareTo(o.firstName) == 0){
+        if (this.firstName.compareTo(o.firstName) == 0) {
             return this.secondName.compareTo(o.secondName);
         }
         return this.firstName.compareTo(o.firstName);

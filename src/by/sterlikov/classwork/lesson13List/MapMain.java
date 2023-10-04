@@ -1,6 +1,7 @@
 package by.sterlikov.classwork.lesson13List;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class MapMain {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class MapMain {
 
         System.out.println(firstMap.containsKey(3));// присусивует ключ 3
         System.out.println(firstMap.isEmpty());
-        System.out.println(firstMap.size());// сколько ключкей
+        System.out.println(firstMap.size());// количество ключей
         System.out.println(firstMap.remove(3));
         System.out.println(firstMap);
         for (Integer key : firstMap.keySet()) {  // древний метод
@@ -42,6 +43,19 @@ public class MapMain {
         map.put("phones", phones);
 
         map.get("phones").add("samsung2");// сохранится и в листе телефоны и в МАР
+
+        long samsung2 = phones
+                .stream()
+                .filter(f -> f.equals("samsung2"))
+                .count();
+        System.out.println("count samsung2 = " + samsung2);
+
+        phones
+                .stream()
+                .map(f -> f.toUpperCase(Locale.ROOT))
+                .sorted()
+                .forEach(p -> System.out.println(" All phones to Upper case " + p));
+
 
         System.out.println(map);
         System.out.println(phones);

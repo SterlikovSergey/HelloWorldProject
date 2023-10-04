@@ -15,6 +15,5 @@ public class SaxExample {
         SAXParser parser = factory.newSAXParser();
         parser.parse(new File("article.xml"),handler);
         System.out.println(handler.getWebsite());
-
     }
 }

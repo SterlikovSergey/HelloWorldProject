@@ -1,8 +1,8 @@
 package by.sterlikov.classwork.lesson16;
 
 public class Employee {
-    private String category;
-    private int salary;
+    private final String category;
+    private final int salary;
 
     public Employee(String category, int salary) {
         this.category = category;

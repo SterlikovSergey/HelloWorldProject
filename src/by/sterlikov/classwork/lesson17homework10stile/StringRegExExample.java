@@ -8,7 +8,7 @@ public class StringRegExExample {
     public static final String DEFAULT_DOCUMENT_FORMAT = "(\\d{4}-[a-z]{3}-){2}(\\d[a-z]){2}";// 4 числа - 3 буквы - повторяется 2 раза //
 
     public static void main(String[] args) {
-        //Номер документа имеет формат xxxx-yyy-xxxx-yyy-xyxy, где x — это число, а y — это буква.
+        //Номер документа имеет формат xlsx-yyy-xlsx-yyy-xy xy, где x — это число, а y — это буква.
 
         //Pattern pattern = Pattern.compile("(\\d{4}-[a-z]{3}-){2}(\\d[a-z]){2}");
         Pattern pattern = Pattern.compile(DEFAULT_DOCUMENT_FORMAT); // command+option+C (выделенный фрагмент) создаст constant

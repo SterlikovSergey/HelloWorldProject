@@ -14,11 +14,12 @@ public class FilesExample {
         file12.mkdir();// создать папку out2
         System.out.println(file.getParent()); // покажет родительский класс
 
-        System.out.println(file.getAbsolutePath()); // вувести обсалютный путь к файлу
+        System.out.println(file.getAbsolutePath()); // вывести обсалютный путь к файлу
 
         File file1 = new File("/Users/sergeysterlikov/Developer/IdeaProjects/HelloWorldProject");
 
-        System.out.println(Arrays.toString(file1.listFiles(new DocFilter())));  // вывести в масиве все файлу в указанном адресе и проверить по фильтру на .doc
+        System.out.println(Arrays.toString(file1.listFiles(new DocFilter())));
+        // вывести в масиве все файлу в указанном адресе и проверить по фильтру на .doc
 
 
         System.out.println(file.canRead());// могу прочитать ?
@@ -33,7 +34,8 @@ public class FilesExample {
 
 
         try {
-            System.out.println(file.createNewFile()); // создаём файл по указанному пути обьявленному при созданиии обьекта
+            System.out.println(file.createNewFile());
+            // создаём файл по указанному пути обьявленному при созданиии обьекта
         } catch (IOException e) {
             System.out.println("File is not create");
         }

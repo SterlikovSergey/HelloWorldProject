@@ -8,11 +8,7 @@ public class Apple implements Flyable {
 
     @Override
     public void flyWithSound() {
-        System.out.println("Apple fly and sound Zzzzzzzzzzzz");
+        System.out.println("Apple fly and sound ");
     }
 
-    @Override
-    public void printMessage() {
-        Flyable.super.printMessage();
-    }
 }

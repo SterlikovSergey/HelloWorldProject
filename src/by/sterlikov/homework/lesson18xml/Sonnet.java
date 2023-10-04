@@ -1,12 +1,14 @@
 package by.sterlikov.homework.lesson18xml;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @XmlRootElement
 
 public class Sonnet {
-
+    @XmlAttribute(name = "id")
     private String sonnetTypes;
     private Author author;
     private String title;

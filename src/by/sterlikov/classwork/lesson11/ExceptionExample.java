@@ -12,6 +12,7 @@ public class ExceptionExample {
             try {                           // по примеру if возможно  несколько try
                 result = 2 / 0;
             } catch (Exception e) {
+                throw new RuntimeException(e);
 
             }
         } catch (ArithmeticException | IndexOutOfBoundsException e) {  // обработать ошибку возможно и две

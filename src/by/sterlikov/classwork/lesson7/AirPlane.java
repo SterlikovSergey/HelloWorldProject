@@ -9,7 +9,11 @@ public class AirPlane implements Flyable {
 
     @Override
     public void flyWithSound() {
-        System.out.println("AirPlane is fly  sound  zzzzzzzzzz");
+        System.out.println("AirPlane is fly  sound ");
+    }
 
+    @Override
+    public void printMessage() {
+        Flyable.super.printMessage();
     }
 }

@@ -10,6 +10,8 @@ public class LoginForm extends JFrame{
 
     private LoginForm loginForm;
 
+    public LoginForm() {
+    }
 
 
     public static void main(String[] args) {
@@ -25,8 +27,8 @@ public class LoginForm extends JFrame{
     }
 
     private static String getDoctorByPlan (String plan){
-        if(plan.equals("1")) return "you need to visit terapist";
-        if(plan.equals("2")) return "you need to visit dontist";
+        if(plan.equals("1")) return "you need to visit therapist";
+        if(plan.equals("2")) return "you need to visit dentist";
         if(plan.equals("3")) return "you need to visit medic";
 
         return "Default";

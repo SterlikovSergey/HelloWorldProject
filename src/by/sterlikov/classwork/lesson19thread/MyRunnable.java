@@ -1,7 +1,7 @@
 package by.sterlikov.classwork.lesson19thread;
 
 public class MyRunnable implements Runnable{
-    private Counter counter;
+    private final Counter counter;
 
     public MyRunnable(Counter counter) {
         this.counter = counter;

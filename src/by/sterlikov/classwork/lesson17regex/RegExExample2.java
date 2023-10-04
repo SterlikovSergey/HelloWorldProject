@@ -16,14 +16,14 @@ public class RegExExample2 {
         //Pattern pattern = Pattern.compile("[a-z]?"); //или ноль или одна
         //Pattern pattern = Pattern.compile("[a-z]{2,3}");
 // иалые и большие буквы
-        //Pattern pattern = Pattern.compile("[a-zA-Z]*"); // малые и большие вариант 1
-        //Pattern pattern = Pattern.compile("[a-z]+",Pattern.CASE_INSENSITIVE);//малые и большие буквы вариант второй
-        //Pattern pattern = Pattern.compile("[a-z]+",CASE_INSENSITIVE); //после  import static
-        //Pattern pattern = Pattern.compile("[a-z]+\\d+[a-z]+"); //буква цифра буква
-        //Pattern pattern = Pattern.compile("[a-z]+\\d+$");//$  поиск  всех буквы которыми заканчивается строчка
-        //Pattern pattern = Pattern.compile("^[a-z]+\\d+"); // ^ этим регулярным выражением должна начинаться  строчка
-        //Pattern pattern = Pattern.compile("[a-z]+\\.\\d+");// для поиска точки
-        //Pattern pattern = Pattern.compile("[a-z]+.\\d+"); // для поиска любого символа
+/*        Pattern pattern = Pattern.compile("[a-zA-Z]*"); // малые и большие вариант 1
+        Pattern pattern = Pattern.compile("[a-z]+",Pattern.CASE_INSENSITIVE);//малые и большие буквы вариант второй
+        Pattern pattern = Pattern.compile("[a-z]+",CASE_INSENSITIVE); //после  import static
+        Pattern pattern = Pattern.compile("[a-z]+\\d+[a-z]+"); //буква цифра буква
+        Pattern pattern = Pattern.compile("[a-z]+\\d+$");//$  поиск  всех буквы которыми заканчивается строчка
+        Pattern pattern = Pattern.compile("^[a-z]+\\d+"); // ^ этим регулярным выражением должна начинаться  строчка
+        Pattern pattern = Pattern.compile("[a-z]+\\.\\d+");// для поиска точки
+        Pattern pattern = Pattern.compile("[a-z]+.\\d+"); // для поиска любого символа*/
         Pattern pattern = Pattern.compile("([a-z]+.)(\\d+)");
 
 

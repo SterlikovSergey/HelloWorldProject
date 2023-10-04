@@ -7,6 +7,9 @@ public class ATM {
     private int countOfBanknotes100 = 0;
     private int moneyOnBalance;
 
+    Banknote banknote;
+
+
     public ATM() {
     }
 
@@ -57,8 +60,17 @@ public class ATM {
     }
 
     public boolean removedMoney(int money) {
-        if (moneyOnBalance > 0) {
-            moneyOnBalance -= money;
+        if (moneyOnBalance >= 20) {
+            if(money == 20){
+                countOfBanknotes20 =- 1;
+                moneyOnBalance -= money;
+            }if (money == 50){
+                countOfBanknotes50 =- 1;
+                moneyOnBalance -= money;
+            }if (money == 100) {
+                countOfBanknotes100 =- 1;
+                moneyOnBalance -= money;
+            }
         } else {
             System.out.println("No money");
         }

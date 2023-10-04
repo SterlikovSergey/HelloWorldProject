@@ -75,7 +75,8 @@ public class Car {
     }
 
     public void goDirectly(int currentSpeed) {
-        System.out.println("my car is going" + currentSpeed + "currentSpeed"); // перезагрузка, используем тот же метод плюс параметр
+        System.out.println
+                ("my car is going" + currentSpeed + "currentSpeed"); // перезагрузка, используем тот же метод плюс параметр
     }
 
     public void switchDirection(boolean isRightOne) {

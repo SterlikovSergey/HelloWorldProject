@@ -9,6 +9,8 @@ public class mainATM {
         atm.addMoney(100);
         atm.addMoney(100);
         System.out.println(atm.toString());
+        atm.removedMoney(100);
+        System.out.println(atm.toString());
 
     }
 }

@@ -24,7 +24,7 @@ public class FruitMain {
         //  предикат - что то даём  , возвращает true или false
         // консьюмер что то даем ни чего не возращаем
 
-        Consumer<Fruit> myStringConsumer = s -> System.out.println(s);
+        Consumer<Fruit> myStringConsumer = System.out::println;
         printNeededFruits(fruits, myStringConsumer);
 
         Consumer<Fruit> bananaConsumer = fruit -> {

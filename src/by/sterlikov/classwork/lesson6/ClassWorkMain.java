@@ -6,7 +6,7 @@ public class ClassWorkMain {
         System.out.println(myBMW.getColor());
         myBMW.setColor("black");
         System.out.println(myBMW.getColor());
-        System.out.println(myBMW.toString());
+        System.out.println(myBMW);
         myBMW.starterDriving();
         myBMW.starterDriving();
         myBMW.intSpeedChange(4);
@@ -25,6 +25,6 @@ public class ClassWorkMain {
         newMyCar.setRadio(true);
         newMyCar.setWheelNumber(3);
 
-        System.out.println(newMyCar.toString());
+        System.out.println(newMyCar);
     }
 }

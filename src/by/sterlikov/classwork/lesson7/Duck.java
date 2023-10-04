@@ -8,7 +8,7 @@ public class Duck implements Flyable {
 
     @Override
     public void flyWithSound() {
-        System.out.println("Duck fly and sound Zzzzzzzzz");
+        System.out.println("Duck fly and sound");
 
     }
     @Override

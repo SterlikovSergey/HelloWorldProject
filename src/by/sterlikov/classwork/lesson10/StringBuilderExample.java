@@ -22,14 +22,14 @@ public class StringBuilderExample {
         System.out.println(result + "replace " + builder.replace(0, 3, "abc"));
         builder.reverse();   // сторока задом на перед;
 
-        System.out.println(builder.toString());
+        System.out.println(builder);
         String testCase = "This abba not";
 
         System.out.println(isPalindrome(1, testCase));
         System.out.println(isPalindrome(2, testCase));
         System.out.println(isPalindrome(3, testCase));
         System.out.println(isPalindrome(10, testCase));
-        //System.out.println(isPalindrome(-1,testCase));
+        System.out.println(isPalindrome(-1,testCase));
 
         System.out.println(isNewPalindrome(testCase));
     }

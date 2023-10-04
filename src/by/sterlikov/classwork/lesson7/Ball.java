@@ -8,7 +8,7 @@ public class Ball implements Flyable {
 
     @Override
     public void flyWithSound() {
-        System.out.println("Ball is fly and sound Zzzzzzzzzzz");
+        System.out.println("Ball is fly and sound");
 
     }
 

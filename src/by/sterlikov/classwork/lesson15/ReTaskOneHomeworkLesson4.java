@@ -21,6 +21,6 @@ public class ReTaskOneHomeworkLesson4 {
 
         arrays.stream()
                 .filter(z -> z % 2 == 0)
-                .forEach(z -> System.out.println(z)); // task 4
+                .forEach(System.out::println); // task 4
     }
 }

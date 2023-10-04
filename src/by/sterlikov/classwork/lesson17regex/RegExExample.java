@@ -19,7 +19,7 @@ public class RegExExample {
             System.out.println(numbersMatcher.start() + " " + numbersMatcher.end());  // дает нам точное начало и конец подходящего
             System.out.println(numbersMatcher.group());//возвращает этот кусок
         }*/
-        while (numbersMatcher.find()){ //даем команду найти что то похожее под шаблон   //while найди все куски кода  соответсвующие шаблону
+        while (numbersMatcher.find()) { //даем команду найти что то похожее под шаблон   //while найди все куски кода  соответсвующие шаблону
             System.out.println(numbersMatcher.start() + " " + numbersMatcher.end());  // дает нам точное начало и
             System.out.println(numbersMatcher.group());//возвращает этот кусок
         }
@@ -34,6 +34,6 @@ public class RegExExample {
         numbersMatcher.results()
                 .map(MatchResult::group)
                 .map(String::length)
-                .forEach(lenght -> System.out.println(lenght));
+                .forEach(System.out::println);
     }
 }

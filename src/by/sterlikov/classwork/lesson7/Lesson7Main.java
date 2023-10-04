@@ -17,7 +17,6 @@ public class Lesson7Main {
         duck.printMessage();
 
         ball.fly();
-        ;
         ball.flyWithSound();
         ball.printMessage();
 
